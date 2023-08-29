@@ -1,5 +1,7 @@
 # Kijiji Web Scraper and Email Notifier
 
+![GitHub](https://img.shields.io/github/license/luckmanqasim/kijiji-webscraper)
+
 A Python web scraper that monitors a website for new listings and sends email notifications with details of the new ads. The project also includes a database to store and manage scraped data.
 
 
@@ -63,7 +65,6 @@ cd web-scraper
 
 3. Create a virtual environment (optional but recommended):
 ```bash
-Copy code
 python -m venv venv
 ```
 
