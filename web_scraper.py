@@ -88,6 +88,7 @@ class WebScraper:
         while True:
             print(f'Scraping page: {page_number}')
             
+            # fetch, parse and extract the data from each page, and save it to self.all_listing_data
             page_content = self._fetch_page(page_url)
             soup = self._parse_data(page_content)
             self._extract_data(soup)
@@ -99,4 +100,5 @@ class WebScraper:
             
             page_number += 1
 
+        # return all the extracted ads from all the pages
         return self.all_listing_data
