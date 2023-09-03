@@ -42,8 +42,8 @@ class Message:
             smtp_obj.ehlo()
             smtp_obj.login(self.sender_email, self.sender_password)
 
-            subject = self.create_email_subject(new_data)
-            body = self.create_email_body(new_data)
+            subject = self._create_email_subject(new_data)
+            body = self._create_email_body(new_data)
             print(subject, body)
 
             # create the email object
@@ -57,6 +57,7 @@ class Message:
             smtp_obj.sendmail(self.sender_email, receiver_email, msg.as_string())
             smtp_obj.quit()
 
+            # returns True if the email is successfully sent
             return True
 
         except smtplib.SMTPAuthenticationError as auth_error:
@@ -76,7 +77,7 @@ class Message:
 
 
     # create a subject for the email depending if there are any new ads or not
-    def create_email_subject(self, new_data):
+    def _create_email_subject(self, new_data):
         """
         Create the email subject based on the number of new ads.
 
@@ -96,7 +97,7 @@ class Message:
     
 
     # Creates a body containing the info for new ads by parsing the list of new data in human readable form
-    def create_email_body(self, new_data):
+    def _create_email_body(self, new_data):
         """
         Create the email body with information about new ads.
 
