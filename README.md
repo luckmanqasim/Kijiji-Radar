@@ -1,6 +1,6 @@
-# Kijiji Web Scraper and Email Notifier
+# Kijiji Radar
 
-![GitHub](https://img.shields.io/github/license/luckmanqasim/kijiji-webscraper)
+![GitHub](https://img.shields.io/github/license/luckmanqasim/Kijiji-Radar)
 
 A Python web scraper that monitors a website for new listings and sends email notifications with details of the new ads. The project also includes a database to store and manage scraped data.
 
@@ -10,12 +10,12 @@ A Python web scraper that monitors a website for new listings and sends email no
 
 ## Introduction
 
-Kijiji Webscraper is a Python-based web scraping tool designed to extract data from Kijiji, a popular online classifieds platform. It scrapes data related to specific search queries and notifies users of newly posted listings via email. This project is a powerful tool for staying up-to-date with the latest listings on Kijiji.
+Kijiji Radar is a Python-based web scraping tool designed to extract data from Kijiji, a popular online classifieds platform. It scrapes data related to specific search queries and notifies users of newly posted listings via email. This project is a powerful tool for staying up-to-date with the latest listings on Kijiji.
 
 
 ## Project description
 
-Kijiji Webscraper consists of three main components:
+Kijiji Radar consists of three main components:
 
 1. **Web Scraper:** This component uses the BeautifulSoup library and the Requests library to scrape data from Kijiji search results pages. It extracts information such as the name, price, URL, and thumbnail image of listings.
 
@@ -34,12 +34,12 @@ Kijiji Webscraper consists of three main components:
 
 ## Getting Started
 
-Follow these steps to set up and use the web scraper:
+Follow these steps to set up and use Kijiji Radar:
 
 
 ### Prerequisites
 
-Before using MarketBot, ensure that you have the following prerequisites installed:
+Before using Kijiji Radar, ensure that you have the following prerequisites installed:
 
 - Python 3.x
 - Required Python packages (install using pip):
@@ -55,12 +55,12 @@ Before using MarketBot, ensure that you have the following prerequisites install
 
 1. Clone this repository to your local machine:
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/luckmanqasim/Kijiji-Radar.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd web-scraper
+cd Kijiji Radar
 ```
 
 3. Create a virtual environment (optional but recommended):
@@ -90,7 +90,7 @@ pip install -r requirements.txt
 
 ## Usage Guide
 
-To use MarketBot, follow these steps:
+To use Kijiji Radar, follow these steps:
 
 1. Run the main script:
 
@@ -98,27 +98,27 @@ To use MarketBot, follow these steps:
 python main.py
 ```
 
-2. MarketBot will start scraping Kijiji listings based on the configured search query. It will store the data in the SQLite database.
+2. Kijiji Radar will start scraping Kijiji listings based on the configured search query. It will store the data in the SQLite database.
 
-3. When new listings are detected, MarketBot will send email notifications to the specified recipients.
+3. When new listings are detected, Kijiji Radar will send email notifications to the specified recipients.
 
 4. You can customize the scraping behavior, email notifications, and other settings by editing the `.env` file and the source code.
 
 
 ## Database
-MarketBot uses an SQLite database to store information about scraped listings. The database includes a table with columns for the name, price, URL, and thumbnail image of each listing. The database helps in tracking new listings and preventing duplicate notifications.
+Kijiji Radar uses an SQLite database to store information about scraped listings. The database includes a table with columns for the name, price, URL, and thumbnail image of each listing. The database helps in tracking new listings and preventing duplicate notifications.
 
 ## Email Notifications
-MarketBot can send email notifications to inform users of new listings. To configure email notifications, edit the `.env` file to specify your SMTP server details, sender email, sender password, and recipient email(s). Ensure that you have allowed less secure apps or generated an app-specific password if required by your email provider.
+Kijiji Radar can send email notifications to inform users of new listings. To configure email notifications, edit the `.env` file to specify your SMTP server details, sender email, sender password, and recipient email(s). Ensure that you have allowed less secure apps or generated an app-specific password if required by your email provider.
 
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/luckmanqasim/image-editor/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/luckmanqasim/Kijiji-Radar/blob/main/LICENSE) file for details.
 
 
 ## Disclaimer
 
-This web scraping project is provided for educational and informational purposes only. It is essential to respect the terms of service and policies of websites you intend to scrape. Unauthorized or excessive web scraping may violate website terms of service and legal regulations.
+This project is provided for educational and informational purposes only. It is essential to respect the terms of service and policies of websites you intend to scrape. Unauthorized or excessive web scraping may violate website terms of service and legal regulations.
 
 The author of this project does not endorse or encourage any unauthorized or unethical use of web scraping techniques. Users of this project are solely responsible for their actions and must ensure that they comply with all relevant laws and regulations when using this software.
 
